@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="#" id="logo-link">
+                <h2>Book Bank</h2>
+                <!-- <img src="" alt="My Library Logo" class="logo-img"> -->
+            </a>
+        </div>
+        <div class="header-actions">
+            <a href="login.html" class="login-btn">Login</a>
+            <button id="fullscreen-btn" class="fullscreen-btn">Fullscreen</button>
+        </div>
+    </header>
+
+    <!-- Background Image Section -->
+    <div class="bg-image">
+        <div class="search-bar">
+            <input type="text" id="search-query" placeholder="Search books..." aria-label="Search">
+            <button id="search-btn" type="button">Search</button>
+        </div>
+    </div>
+
+    <!-- Famous Literature Section -->
+    <div class="literature-section">
+        <h2>Famous Literatures</h2>
+        <div class="literature-container">
+            <div class="literature-item">
+                <img src="Mahabharath.jpg" alt="Literature 1">
+                <p>Mahabharath</p>
+            </div>
+            <div class="literature-item">
+                <img src="Ramayana.jpg" alt="Literature 2">
+                <p>Ramayan</p>
+            </div>
+            <div class="literature-item">
+                <img src="rig.jpg" alt="Literature 3">
+                <p>Rigveda</p>
+            </div>
+            <div class="literature-item">
+                <img src="yajur.jpg" alt="Literature 4">
+                <p>Yajurveda</p>
+            </div>
+            <div class="literature-item">
+                <img src="sama.jpeg" alt="Literature 5">
+                <p>Samaveda</p>
+            </div>
+            <!-- <div class="literature-item">
+                <img src="atharva.jpg" alt="Literature 6">
+                <p>Atharvaveda</p>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="results-section">
+        <div id="results-container"></div>
+    </div>
+    <!-- Modal for displaying book details -->
+<div id="book-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modal-title"></h2>
+        <img id="modal-img" src="" alt="Book Cover">
+        <p id="modal-authors"></p>
+        <p id="modal-description"></p>
+        
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Library. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

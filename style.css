@@ -1,0 +1,249 @@
+/* Reset some default styles */
+body, h1, h2, p, a, button, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0; /* Remove margin at the bottom of the header */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo .logo-img {
+    height: 40px; /* Adjust as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.header-actions .login-btn, .header-actions .fullscreen-btn {
+    color: #fff;
+    text-decoration: none;
+    background-color: #444;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header-actions .login-btn:hover, .header-actions .fullscreen-btn:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Background Image Section */
+.bg-image {
+    height: 400px;
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Remove margin around the background image div */
+    position: relative;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.search-bar input[type="text"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    flex: 1;
+}
+
+.search-bar button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: lightblue;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Results Section */
+.results-section {
+    padding: 20px;
+}
+
+#results-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.result-item {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+.result-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.result-item h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.result-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flexbox styling for literature containers */
+.literature-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.literature-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.literature-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.literature-item {
+    width: 18%; /* Adjust the width based on the number of items you want per row */
+    margin: 10px 0;
+    text-align: center;
+}
+
+.literature-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.literature-item img:hover {
+    transform: scale(1.05);
+}
+
+.literature-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Additional responsive design */
+@media (max-width: 768px) {
+    .literature-item {
+        width: 45%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .literature-item {
+        width: 100%; /* Stack items on very small screens */
+    }
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+h2{
+    color: lightgreen;
+}
